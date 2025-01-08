@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Blue Umbrella</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #ebebb4;
+            color: #333;
+        }
+        h2, p {
+            margin: 0;
+            padding: 10px 20px;
+            font-family: 'Arial Narrow Bold', sans-serif;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* ID Selector */
+        #ex1 {
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 5px 10px 18px skyblue;
+            background-color: #fff;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        /* Navigation Bar */
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 20%;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        ul li {
+            padding: 15px;
+            text-align: center;
+        }
+        ul li:hover {
+            background-color: #ddd;
+            cursor: pointer;
+        }
+
+        /* Content Area */
+        .content {
+            margin-left: 25%;
+            padding: 20px;
+        }
+
+        /* Table */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+        th, td {
+            padding: 10px;
+        }
+        th {
+            background-color: #f4b41a;
+            color: white;
+        }
+
+        /* Form */
+        form {
+            margin: 20px auto;
+            width: 80%;
+        }
+        label, input, button {
+            display: block;
+            margin-bottom: 10px;
+            width: 100%;
+        }
+        button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar Navigation -->
+    <ul>
+        <li>Login</li>
+        <li>More Books</li>
+        <li>Logout</li>
+    </ul>
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Title Section -->
+        <div id="ex1">
+            <h1>The Blue Umbrella</h1>
+            <p>By Ruskin Bond</p>
+        </div>
+
+        <!-- Description Section -->
+        <h2>Author: Ruskin Bond</h2>
+        <p>The Blue Umbrella is a 1980 Indian novel by Ruskin Bond. It was adapted into a 2005 Hindi film directed by Vishal Bhardwaj.</p>
+        <p>Great story with touching themes.</p>
+        <p>From Rupa Publications.</p>
+
+        <!-- Link Section -->
+        <a href="https://en.wikipedia.org/wiki/The_Blue_Umbrella" target="_blank">Click to know more</a><br><br>
+
+        <!-- Image Section -->
+        <img src="https://www.bookindex.in/wp-content/uploads/2023/12/Characters-of-the-book-The-Blue-Umbrella-by-Ruskin-Bond.jpg" 
+             alt="The Blue Umbrella Cover" height="400" width="400"><br><br>
+
+        <!-- Ordered List -->
+        <h2>Ruskin Bond's Other Collections</h2>
+        <ol>
+            <li>The Angry River</li>
+            <li>The Great Train Journey</li>
+        </ol>
+
+        <!-- Unordered List -->
+        <h2>Main Characters</h2>
+        <ul style="margin-left: 0;">
+            <li>Binya</li>
+            <li>Biju</li>
+            <li>Ram Bharosa</li>
+        </ul>
+
+        <!-- Buy Section -->
+        <p>To buy, click the image below:</p>
+        <a href="https://www.amazon.in/Blue-Umbrella-Ruskin-Bond/dp/8171673406" target="_blank">
+            <img src="https://m.media-amazon.com/images/I/81T4LtzWm4L._AC_UF1000,1000_QL80_.jpg" 
+                 alt="The Blue Umbrella Book" height="300">
+        </a><br><br>
+
+        <!-- Table Section -->
+        <h2>Student Names and Marks</h2>
+        <table>
+            <tr>
+                <th>Student Name</th>
+                <th>Marks</th>
+            </tr>
+            <tr>
+                <td>Ravi</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>Sneha</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>Maragathaambikaa</td>
+                <td>100</td>
+            </tr>
+        </table>
+
+        <!-- Registration Form -->
+        <h2 style="color: grey; background-color: gold;">User Registration</h2>
+        <form>
+            <label for="fname">Name:</label>
+            <input type="text" id="fname" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="pw">Password:</label>
+            <input type="password" id="pw" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+
+        <!-- Contact Form -->
+        <h2>Contact Us</h2>
+        <form>
+            <label for="msg">Your Message:</label>
+            <input type="text" id="msg" name="message" required>
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- Embedded YouTube Video -->
+        <h2>Watch The Blue Umbrella</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ITvDHR5ZoEM" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        Created by Maragathaambikaa | Contact: maragathaa2005@gmail.com
+    </footer>
+</body>
+</html>

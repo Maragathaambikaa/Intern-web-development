@@ -1,24 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--External css--> 
+    <link rel="stylesheet" href="styles.css">
     <meta charset="utf-8">
     <title>The Blue Umbrella</title>
-    <style>
+ <style>
     ex1{
   border: 1px solid;
   padding: 10px;
   box-shadow: 5px 10px 18px skyblue;
 }
-    </style>
+/*group selector*/
+h2,p
+{
+                margin:0;
+                padding:0;
+               font-family:'Arial Narrow Bold', sans-serif;
+}
+div>p
+{
+color:blueviolet;
+}
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      width: 25%;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+ </style>
+   
+ 
 </head>
-<body>
+<body bgcolor="grey">
     <center>
     <div id="ex1">
     <p>The Blue Umbrella</p>
    </div>
+    <!--Vertical navigation bar navigation bar-->
+    <ul>
+        <li>login</li>
+        <li>More books</li>
+        <li>logout</li>      
+    </ul>
+    <div style1="margin-left:25%;padding:1px 16px;height:auto;">
+  
     <h2>Author: Ruskin Bond</h2>
     <p>The Blue Umbrella is a 1980 Indian novel by Ruskin Bond. It was adapted into a 2005 Hindi film directed by Vishal Bhardwaj.</p>
-
+   <div>
+    <p>great story</p>
+    <div>
+        <p>From Rupa publication</p>
+    </div>
+   </div>
     <!-- Link to more information -->
     <a href="https://en.wikipedia.org/wiki/The_Blue_Umbrella">Click to know more</a><br><br>
 
@@ -43,6 +81,7 @@
     <br>
     <p>To buy click the image below</p>
     <a href="https://www.amazon.in/Blue-Umbrella-Ruskin-Bond/dp/8171673406"> <img src= "https://m.media-amazon.com/images/I/81T4LtzWm4L._AC_UF1000,1000_QL80_.jpg"></a><br><br>
+  </div>
     <!-- Table -->
     <h2>Student Names and Marks</h2>
     <table border="1">
@@ -65,7 +104,8 @@
     </table>
 
     <!-- Form -->
-    <h2>User Registration</h2>
+  <!--inline css-->  
+    <h2 style ="color:grey;background-color:gold;">User Registration</h2>
     <form>
         <label for="fname">Name:</label><br>
         <input type="text" id="fname" name="name" required><br><br>
